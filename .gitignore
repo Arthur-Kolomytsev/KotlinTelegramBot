@@ -1,0 +1,28 @@
+# Gradle
+.gradle/
+build/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# Android
+gradle-wrapper.properties
+gradlew
+gradlew.bat
+
+# Local prooerties
+local.properties
+
+# Kotlin ###
+.kotlin
+
+# Windows
+Thumbs.db
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
