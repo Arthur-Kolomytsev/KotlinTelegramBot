@@ -11,9 +11,9 @@ fun main() {
     val dictionary = mutableListOf<Word>()
 
     try {
-        val lines: List<String> = words.readLines()
+        val generalLines: List<String> = words.readLines()
 
-        for (line in lines) {
+        for (line in generalLines) {
 
             if (line.isBlank()) continue
 
@@ -32,6 +32,5 @@ fun main() {
     }
 
     dictionary.forEach { println(it) }
-
 
 }
