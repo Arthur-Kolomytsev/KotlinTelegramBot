@@ -12,13 +12,15 @@ fun main() {
 
     try {
         val lines: List<String> = words.readLines()
+
         for (line in lines) {
             val line = line.split("|")
-            var correctAnswersCount = 0
+            val word = Word(original = line[0], translate = line[1])
+
             if (line.size == 3) {
-                correctAnswersCount = line[2].toIntOrNull() ?: 0
+                word.correctAnswersCount = line[2].toIntOrNull() ?: 0
             }
-            val word = Word(original = line[0], translate = line[1], correctAnswersCount)
+
             dictionary.add(word)
         }
 
